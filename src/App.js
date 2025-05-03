@@ -142,6 +142,7 @@ function App() {
               <Route path="dashboard/admin/instructors" element={<InstructorManagement/>}/>
               <Route path="dashboard/admin/courses" element={<CourseManagement/>}/>
               <Route path="dashboard/admin/categories" element={<CategoriesManagement />} />
+              <Route path="dashboard/admin/courses/edit/:courseId" element={<EditCourse />} />
             </>
           )}
           <Route path="dashboard/settings" element={<Settings />} />

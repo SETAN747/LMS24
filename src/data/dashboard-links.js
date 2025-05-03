@@ -34,13 +34,13 @@ export const sidebarLinks = [
     type: ACCOUNT_TYPE.STUDENT,
     icon: "VscMortarBoard",
   },
-  {
-    id: 6,
-    name: "Dashboard",
-    path: "/dashboard/admin",
-    type: ACCOUNT_TYPE.ADMIN,
-    icon: "VscDashboard",
-  },
+  // {
+  //   id: 6,
+  //   name: "Dashboard",
+  //   path: "/dashboard/admin",
+  //   type: ACCOUNT_TYPE.ADMIN,
+  //   icon: "VscDashboard",
+  // },
   {
     id: 7,
     name: "Students",
@@ -62,13 +62,13 @@ export const sidebarLinks = [
     type: ACCOUNT_TYPE.ADMIN,
     icon: "VscBook", // course management
   },
-  {
-    id: 10,
-    name: "Analytics",
-    path: "/dashboard/admin/analytics",
-    type: ACCOUNT_TYPE.ADMIN,
-    icon: "VscGraphLine", // data insights
-  },
+  // {
+  //   id: 10,
+  //   name: "Analytics",
+  //   path: "/dashboard/admin/analytics",
+  //   type: ACCOUNT_TYPE.ADMIN,
+  //   icon: "VscGraphLine", // data insights
+  // },
   {
     id: 11,
     name: "Categories",
@@ -76,13 +76,13 @@ export const sidebarLinks = [
     type: ACCOUNT_TYPE.ADMIN,
     icon: "VscSymbolClass", // categorize things
   },
-  {
-    id: 12,
-    name: "Reports",
-    path: "/dashboard/admin/reports",
-    type: ACCOUNT_TYPE.ADMIN,
-    icon: "VscReport", // user/content reports
-  },
+  // {
+  //   id: 12,
+  //   name: "Reports",
+  //   path: "/dashboard/admin/reports",
+  //   type: ACCOUNT_TYPE.ADMIN,
+  //   icon: "VscReport", // user/content reports
+  // },
   {
     id: 13,
     name: "Payments",
@@ -90,13 +90,13 @@ export const sidebarLinks = [
     type: ACCOUNT_TYPE.ADMIN,
     icon: "VscCreditCard", // transactions and earnings
   },
-  {
-    id: 14,
-    name: "Notifications",
-    path: "/dashboard/admin/notifications",
-    type: ACCOUNT_TYPE.ADMIN,
-    icon: "VscBell", // alert center
-  },
+  // {
+  //   id: 14,
+  //   name: "Notifications",
+  //   path: "/dashboard/admin/notifications",
+  //   type: ACCOUNT_TYPE.ADMIN,
+  //   icon: "VscBell", // alert center
+  // },
   {
     id: 15,
     name: "Support Tickets",
@@ -104,18 +104,18 @@ export const sidebarLinks = [
     type: ACCOUNT_TYPE.ADMIN,
     icon: "VscCommentDiscussion", // support center
   },
-  {
-    id: 16,
-    name: "Admin Roles",
-    path: "/dashboard/admin/roles",
-    type: ACCOUNT_TYPE.ADMIN,
-    icon: "VscShield", // role permissions
-  },
-  {
-    id: 17,
-    name: "Activity Logs",
-    path: "/dashboard/admin/logs",
-    type: ACCOUNT_TYPE.ADMIN,
-    icon: "VscHistory", // logs or admin activity
-  },
+  // {
+  //   id: 16,
+  //   name: "Admin Roles",
+  //   path: "/dashboard/admin/roles",
+  //   type: ACCOUNT_TYPE.ADMIN,
+  //   icon: "VscShield", // role permissions
+  // },
+  // {
+  //   id: 17,
+  //   name: "Activity Logs",
+  //   path: "/dashboard/admin/logs",
+  //   type: ACCOUNT_TYPE.ADMIN,
+  //   icon: "VscHistory", // logs or admin activity
+  // },
 ];

@@ -7,6 +7,7 @@ import { editCourseDetails } from "../../../../../services/operations/courseDeta
 import { resetCourseState, setStep } from "../../../../../slices/courseSlice"
 import { COURSE_STATUS } from "../../../../../utils/constants"
 import IconBtn from "../../../../common/IconBtn"
+import { ACCOUNT_TYPE } from "../../../../../utils/constants"
 
 export default function PublishCourse() {
   const { register, handleSubmit, setValue, getValues } = useForm()
@@ -14,7 +15,8 @@ export default function PublishCourse() {
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const { token } = useSelector((state) => state.auth)
-  const { course } = useSelector((state) => state.course)
+  const { course } = useSelector((state) => state.course) 
+  const { user } = useSelector((state) => state.profile)
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
@@ -29,7 +31,14 @@ export default function PublishCourse() {
 
   const goToCourses = () => {
     dispatch(resetCourseState())
-    navigate("/dashboard/my-courses")  
+    if (user.accountType === ACCOUNT_TYPE.ADMIN) {
+      // agar admin hai
+      navigate("/dashboard/admin/courses")
+    } else {
+      // instructor ya student ke liye
+      navigate("/dashboard/my-courses")
+    }
+
   }
 
   const handleCoursePublish = async () => {

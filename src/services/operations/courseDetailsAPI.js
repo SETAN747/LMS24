@@ -346,8 +346,8 @@ export const deleteCourse = async (courseId, token) => {
   try {
     const response = await apiConnector(
       "DELETE",
-      `${DELETE_COURSE_API}/${courseId}`, 
-      null, 
+      `${DELETE_COURSE_API}`, 
+      { courseId }, 
       {
         Authorization: `Bearer ${token}`,
       }
